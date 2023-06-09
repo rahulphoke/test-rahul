@@ -1,0 +1,22 @@
+.p-button .pi {
+    margin-right: 5px;  
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  .button {
+    flex: 1;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button-container {
+    margin-left: auto;
+  }
+  

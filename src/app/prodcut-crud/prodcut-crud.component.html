@@ -1,0 +1,28 @@
+
+<form [formGroup]="productForm" class="center-form">
+    <h1>Prdouct Form</h1>
+  
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon">
+        <label for="categoryName">Category</label>
+      </span>
+       
+      <p-dropdown [options]="categoryOptions" formControlName="category"></p-dropdown>
+    </div>
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+          <label  >Product Name </label>
+        </span>
+        <input id="price" type="text" formControlName="product" class="p-inputtext" />
+      </div>
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+          <label for="categoryName">Price </label>
+        </span>
+        <input id="price" type="text" formControlName="price" class="p-inputtext" />
+      </div>
+    <div class="p-buttonset">
+      <button pButton type="button" label="Save" (click)="save()" class="p-button-success"></button>
+      <button pButton type="button" label="Reset" (click)="reset()" class="p-button-secondary"></button>
+    </div>
+  </form>

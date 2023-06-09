@@ -1,0 +1,15 @@
+
+<form [formGroup]="categoryForm" class="center-form">
+  <h1>Category Form</h1>
+
+  <div class="p-inputgroup">
+    <span class="p-inputgroup-addon">
+      <label for="categoryName">Category Name</label>
+    </span>
+    <input id="categoryName" type="text" formControlName="categoryName" class="p-inputtext" />
+  </div>
+  <div class="p-buttonset">
+    <button pButton type="button" label="Save" (click)="save()" class="p-button-success"></button>
+    <button pButton type="button" label="Reset" (click)="reset()" class="p-button-secondary"></button>
+  </div>
+</form>
